@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="create.php">
+            <h1>Registration Form</h1>
+            
+            <label for="firstname">First Name :</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="lastname">Last Name :</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        <a href='./view.php'><button>View Data</button></a>
+    </div>
+</body>
+</html>
